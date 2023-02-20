@@ -1,0 +1,63 @@
+/* tablet:  >= 768px */
+@media screen and (min-width: 768px) {
+    /* layout */
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 3rem;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* services */
+    #services .col {
+        width: calc(100% / 3);
+        padding: 0rem 1rem 1rem 1rem;    
+    }
+    #services .col.large {
+        width: 67%;
+    }
+    #services .col.small {
+        width: 33%;
+    }
+
+    /* with-us */
+    #with-us .col {
+        width: calc(100% / 2);
+    }
+
+    /* about-us */
+    #about-us {
+        display: flex;
+    }
+
+/* desktop: >= 992px  */
+@media screen and (min-width: 992px) {
+    /* layout */
+    .container {
+        width: 80%;
+    }
+
+    /* header */
+    header .menu {
+        display: block;
+    }    
+    .hamburger {
+        display: none;
+    }
+    
+    /* with-us */
+    #with-us .col {
+        width: calc(100% / 3);
+    }
+}   
+
+/* large-desktop >= 1200px */
+@media screen and (min-width: 1200px) {
+    /* layout */
+    
+
+}

@@ -7,3 +7,128 @@
 img {
     max-width: 100%;
 }
+
+/* utility */
+:root {
+    /* colors */
+    --header: #0084FD;
+    --default: #FFFFFF;
+    --planning: #9792E4;
+    --footer: #333333;
+    /* size */
+    
+}
+/* common */
+/* layout */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    /* debug */
+    border: 1px solid fuchsia;
+    min-height: 100px;
+}
+
+/* header */
+header {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: var(--header);
+}
+header .hamburger i {
+    color: var(--default);
+}
+header .menu {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px
+}
+.menu ul li a {
+    color: var(--default);
+}
+
+/* main */
+/* services */
+#services .col {
+    padding: 0 1rem 1rem 1rem;
+}
+.card {
+    border: 2px solid green;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #B5DDFF;
+}
+
+/* planning */
+#planning {
+    width: 100%;
+    padding-top: 3rem;
+    background-color: var(--planning);
+}
+#planning .col {
+    padding-top: 3rem;
+    margin: 0 auto;
+    /* debug */
+    width: 90%;
+    height: 10%;
+    border: 1px solid red;
+}
+
+/* partners */
+#partners {
+    width: 100%;
+    background-color: var(--default);
+}
+#partners .container {
+    width: 90%;
+    text-align: center;
+}
+#partners .container .col {
+    background-color: var(--planning);
+}
+
+/* with-us */
+#with-us {
+    width: 100%;
+    background-color: var(--planning);
+    text-align: center;
+}
+#with-us h4 {
+    color: var(--default);
+}
+#with-us .container {
+    width: 90%;
+}
+
+/* about-us */
+#about-us {
+    width: 100%;
+    background-color: var(--default);
+}
+#about-us .container {
+    width: 90%;
+}
+
+/* get-started */
+#get-started {
+    width: 100%;
+    background-color: var(--planning);
+}
+#get-started .container {
+    width: 90%;
+}
+
+/* footer */
+#footer {
+    width: 100%;
+    background-color: var(--footer);
+}
+#footer .container {
+    width: 90%;
+}
