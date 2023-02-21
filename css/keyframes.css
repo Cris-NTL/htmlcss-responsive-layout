@@ -4,6 +4,9 @@
         padding-bottom: 1.5rem;
         margin: 0rem 1rem;
     }
+    #about-us .container {
+        display: block;
+    }
 }
 
 /* tablet:  >= 768px */
@@ -56,6 +59,15 @@
     #about-us {
         display: flex;
     }
+    #about-us .text {
+        width: 60%;
+    }
+    #about-us .content {
+        width: 40%;
+    }
+    #about-us img {
+        width: 90%;
+    }   
 }
 /* desktop: >= 992px  */
 @media screen and (min-width: 992px) {

@@ -19,6 +19,8 @@ img {
     --button: #46A5FE;
     --object: #0084FD;
     --black: #000000;
+    --lightgrey: #EDEDED;
+    --gold: #FDC15F;
 }
 .button {
     color: var(--default);
@@ -216,8 +218,38 @@ header .menu {
 }
 #about-us .container {
     width: 90%;
+    display: flex;
 }
-
+#about-us h4 {
+    color: var(--planning);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+#about-us p {
+    margin-bottom: 2rem;
+}
+#about-us .content {
+    display: flex;
+    flex-direction: column;
+}
+#about-us img {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+#about-us span {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+#about-us a {
+    color: var(--default);
+    background-color: var(--planning);
+    border-radius: 25px 25px;
+    width: 12rem;
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 /* get-started */
 #get-started {
     width: 100%;
@@ -225,13 +257,52 @@ header .menu {
 }
 #get-started .container {
     width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#get-started span {
+    color: var(--lightgrey);
+}
+#get-started h4 {
+    color: var(--default);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+#get-started h2 {
+    color: var(--gold);
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+#get-started p {
+    color: var(--default);
+    padding-bottom: 1rem;
+}
+#get-started a {
+    width: 15rem;
+    display: block;
+    background-color: var(--default);
+    color: var(--planning);
+    padding: 1rem;
+    border-radius: 25px 25px;
+}
+#get-started .copyright {
+    padding: 1rem 0 3rem 0;
+    color: var(--default);
 }
 
 /* footer */
 #footer {
     width: 100%;
+    padding-bottom: 2rem;
     background-color: var(--footer);
 }
 #footer .container {
     width: 90%;
+    text-align: center;
+    color: var(--default);
+}
+#footer p {
+    margin-bottom: 1rem;
 }
