@@ -36,9 +36,6 @@ body {
     width: 100%;
     margin: 0 auto;
     padding-top: 3rem;
-    /* debug */
-    border: 1px solid fuchsia;
-    min-height: 100px;
 }
 
 /* header */
@@ -102,15 +99,13 @@ header .menu {
 /* planning */
 #planning {
     width: 100%;
-    margin-top: 3rem;    
+    margin-top: 3rem;
+    padding-bottom: 1rem;    
     background-color: var(--planning);
 }
 #planning .col {
     margin: 0 auto;
-    /* debug */
     width: 90%;
-    height: 10%;
-    border: 1px solid red;
 }
 #planning .card {
     background-color: var(--planning);
