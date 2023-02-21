@@ -15,11 +15,20 @@ img {
     --default: #FFFFFF;
     --planning: #9792E4;
     --footer: #333333;
-    /* size */
-    
+    --title: #2295FD;
+    --button: #46A5FE;
+    --object: #0084FD;
 }
+.button {
+    color: var(--default);
+    background-color: var(--button);
+}
+
 /* common */
 /* layout */
+body {
+    font-family: 'PT Sans', sans-serif;
+}
 .container {
     width: 100%;
     margin: 0 auto;
@@ -56,19 +65,41 @@ header .menu {
 
 /* main */
 /* services */
-#services .col {
-    padding: 0 1rem 1rem 1rem;
+#center {
+    text-align: center;
 }
 .card {
-    border: 2px solid green;
     padding: 1rem 1rem 1rem 1rem;
     background-color: #B5DDFF;
+    border-radius: 5%;
+    height: 100%;
+}
+.col.large .card {
+    padding-bottom: 0;
+}
+.card i {
+    color: var(--object);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.card a i {
+    color: var(--default);
+    font-size: 1rem;
+}
+.card h4 {
+    color: var(--title);
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.card img {
+    max-width: 250px;
 }
 
 /* planning */
 #planning {
     width: 100%;
-    padding-top: 3rem;
+    margin-top: 3rem;    
     background-color: var(--planning);
 }
 #planning .col {

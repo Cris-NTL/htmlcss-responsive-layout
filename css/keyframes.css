@@ -1,3 +1,11 @@
+/* mobile: >= 414px */
+@media screen and (max-width: 767px) {
+    #services .col {
+        padding-bottom: 1.5rem;
+        margin: 0rem 1rem;
+    }
+}
+
 /* tablet:  >= 768px */
 @media screen and (min-width: 768px) {
     /* layout */
@@ -10,18 +18,20 @@
     .row {
         display: flex;
         flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
     }
 
     /* services */
+    #services .card {
+        display: flex;
+        flex-direction: column;
+    }
     #services .col {
-        width: calc(100% / 3);
-        padding: 0rem 1rem 1rem 1rem;    
+        width: calc(100% / 3 - 1.5rem);        
     }
     #services .col.large {
-        width: 67%;
-    }
-    #services .col.small {
-        width: 33%;
+        min-width: calc(66% - 1.1rem);    
     }
 
     /* with-us */
@@ -33,7 +43,7 @@
     #about-us {
         display: flex;
     }
-
+}
 /* desktop: >= 992px  */
 @media screen and (min-width: 992px) {
     /* layout */
@@ -56,8 +66,6 @@
 }   
 
 /* large-desktop >= 1200px */
-@media screen and (min-width: 1200px) {
-    /* layout */
-    
+/* @media screen and (min-width: 1200px) {
 
-}
+} */
