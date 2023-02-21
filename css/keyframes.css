@@ -34,9 +34,22 @@
         min-width: calc(66% - 1.1rem);    
     }
 
+    /* partners */
+    #partners .container .col {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    #partners .container .col .first {
+        width: 30%;
+    }
+    #partners .container .col .last {
+        width: 70%;
+    }
+
     /* with-us */
     #with-us .col {
-        width: calc(100% / 2);
+        width: calc(100% / 3);
     }
 
     /* about-us */
@@ -61,7 +74,7 @@
     
     /* with-us */
     #with-us .col {
-        width: calc(100% / 3);
+        width: calc(100% / 4);
     }
 }   
 

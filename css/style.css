@@ -18,6 +18,7 @@ img {
     --title: #2295FD;
     --button: #46A5FE;
     --object: #0084FD;
+    --black: #000000;
 }
 .button {
     color: var(--default);
@@ -92,9 +93,9 @@ header .menu {
     margin-top: 3rem;
     font-size: 1.5rem;
 }
-.card img {
-    max-width: 250px;
-}
+/* .card img {
+    width: 50%;
+} */
 
 /* planning */
 #planning {
@@ -103,12 +104,38 @@ header .menu {
     background-color: var(--planning);
 }
 #planning .col {
-    padding-top: 3rem;
     margin: 0 auto;
     /* debug */
     width: 90%;
     height: 10%;
     border: 1px solid red;
+}
+#planning .card {
+    background-color: var(--planning);
+    color: var(--default);
+}
+#planning h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#planning h4 {
+    color: var(--black);
+}
+#planning .card.white {
+    background-color: white;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.card.white p {
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+#planning i {
+    font-size: 1.5rem;
+    color: var(--black);
+    background-color: var(--planning);
+    padding: 1.5rem;
+    border-radius:50%;
 }
 
 /* partners */
@@ -116,14 +143,31 @@ header .menu {
     width: 100%;
     background-color: var(--default);
 }
+#partners h4 {
+    color: var(--planning);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+#partners p {
+    margin-bottom: 1rem;
+}
 #partners .container {
     width: 90%;
     text-align: center;
 }
 #partners .container .col {
     background-color: var(--planning);
+    border-radius: 5%;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem 2rem 1rem;
+    color: var(--default);
 }
-
+#partners img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 /* with-us */
 #with-us {
     width: 100%;
@@ -131,10 +175,38 @@ header .menu {
     text-align: center;
 }
 #with-us h4 {
+    color: var(--planning);
+    font-size: 3rem;
+    margin-top: 0;
+}
+#with-us h5 {
     color: var(--default);
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+#with-us h6 {
+    color: var(--planning);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+#with-us p {
+    margin-bottom: 1rem;
 }
 #with-us .container {
     width: 90%;
+    text-align: left;
+}
+#with-us a {
+    background-color: var(--planning);
+    color: var(--default);
+    padding: 0.5rem 2rem;
+    border-radius: 15px 15px;
+}
+#with-us .col {
+    margin-bottom: 1.5rem;
+}
+#with-us .card {
+    background-color: var(--default);
 }
 
 /* about-us */
